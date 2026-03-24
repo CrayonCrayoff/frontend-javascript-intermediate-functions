@@ -16,15 +16,15 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 // ---- Verwachte uitkomst: 6
 
-let numberOfCumLaude = 0;
-
-for (let i = 0; i < grades.length; i++) {
-    if (grades[i] >= 8) {
-        numberOfCumLaude++;
-    }
-}
-
-console.log(numberOfCumLaude);
+// let numberOfCumLaude = 0;
+//
+// for (let i = 0; i < grades.length; i++) {
+//     if (grades[i] >= 8) {
+//         numberOfCumLaude++;
+//     }
+// }
+//
+// console.log(numberOfCumLaude);
 
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
@@ -37,7 +37,19 @@ console.log(numberOfCumLaude);
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
+function cumLaude(gradesArr) {
+    let numberOfCumLaude = 0;
 
+    for (let i = 0; i < grades.length; i++) {
+        if (grades[i] >= 8) {
+            numberOfCumLaude++;
+        }
+    }
+
+    return numberOfCumLaude;
+}
+
+console.log(cumLaude(grades));
 
 
 /* Opdracht  2: Gemiddeld cijfer */
