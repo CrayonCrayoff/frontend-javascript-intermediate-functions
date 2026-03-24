@@ -116,13 +116,13 @@ function averageGrade(gradesArr) {
 
 // ---- Verwachte uitkomst: 9
 
-let highestGrade = -1;
-
-for (let i = 0; i < grades.length; i++) {
-    highestGrade = Math.max(highestGrade, grades[i]);
-}
-
-console.log(highestGrade);
+// let highestGrade = -1;
+//
+// for (let i = 0; i < grades.length; i++) {
+//     highestGrade = Math.max(highestGrade, grades[i]);
+// }
+//
+// console.log(highestGrade);
 
 
 /* 3b: Omschrijven tot een herbruikbare functie */
@@ -134,3 +134,15 @@ console.log(highestGrade);
 // highestGrade(grades) geeft 9
 // highestGrade([6, 4, 5]) geeft 6
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
+
+function highestGrade(gradesArr) {
+    let highestGrade = -1;
+
+    for (let i = 0; i < grades.length; i++) {
+        highestGrade = Math.max(highestGrade, grades[i]);
+    }
+
+    return highestGrade;
+}
+
+console.log(highestGrade(grades));
