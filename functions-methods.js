@@ -25,7 +25,7 @@ function getEmailDomain(email) {
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
 function typeOfEmail(email) {
-    const domain = getEmailDomain(email);
+    const domain = email.substring(email.indexOf("@"), email.length);
 
     if (domain === "@novi-education.nl") {
         return "Student";
