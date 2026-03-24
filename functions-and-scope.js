@@ -99,10 +99,10 @@ function averageGrade(gradesArr) {
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-console.log(
-    averageGrade(grades)
-        .toFixed(2)
-);
+// console.log(
+//     averageGrade(grades)
+//         .toFixed(2)
+// );
 
 
 /* Bonusopdracht: hoogste cijfer */
@@ -115,6 +115,14 @@ console.log(
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 9
+
+let highestGrade = -1;
+
+for (let i = 0; i < grades.length; i++) {
+    highestGrade = Math.max(highestGrade, grades[i]);
+}
+
+console.log(highestGrade);
 
 
 /* 3b: Omschrijven tot een herbruikbare functie */
