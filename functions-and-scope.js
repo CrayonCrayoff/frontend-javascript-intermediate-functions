@@ -83,6 +83,10 @@ function cumLaude(gradesArr) {
 // averageGrade([6, 4, 5]) geeft 5
 // averageGrade([8, 9, 4, 6, 10]) geeft 7.4
 
+/* 2c: Afronden op twee decimalen */
+// Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
+// Tip: Google is your best friend!
+
 function averageGrade(gradesArr) {
     let total = 0;
 
@@ -90,20 +94,10 @@ function averageGrade(gradesArr) {
         total += grades[i];
     }
 
-    return total / grades.length;
+    return (total / grades.length).toFixed(2);
 }
 
 // console.log(averageGrade(grades));
-
-/* 2c: Afronden op twee decimalen */
-// Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
-// Tip: Google is your best friend!
-
-// console.log(
-//     averageGrade(grades)
-//         .toFixed(2)
-// );
-
 
 /* Bonusopdracht: hoogste cijfer */
 
