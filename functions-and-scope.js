@@ -93,13 +93,16 @@ function averageGrade(gradesArr) {
     return total / grades.length;
 }
 
-console.log(averageGrade(grades));
+// console.log(averageGrade(grades));
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-
+console.log(
+    averageGrade(grades)
+        .toFixed(2)
+);
 
 
 /* Bonusopdracht: hoogste cijfer */
