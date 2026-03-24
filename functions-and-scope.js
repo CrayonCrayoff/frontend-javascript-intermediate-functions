@@ -40,8 +40,8 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 function cumLaude(gradesArr) {
     let numberOfCumLaude = 0;
 
-    for (let i = 0; i < grades.length; i++) {
-        if (grades[i] >= 8) {
+    for (let i = 0; i < gradesArr.length; i++) {
+        if (gradesArr[i] >= 8) {
             numberOfCumLaude++;
         }
     }
@@ -90,11 +90,11 @@ function cumLaude(gradesArr) {
 function averageGrade(gradesArr) {
     let total = 0;
 
-    for (let i = 0; i < grades.length; i++) {
-        total += grades[i];
+    for (let i = 0; i < gradesArr.length; i++) {
+        total += gradesArr[i];
     }
 
-    return (total / grades.length).toFixed(2);
+    return (total / gradesArr.length).toFixed(2);
 }
 
 // console.log(averageGrade(grades));
@@ -132,8 +132,8 @@ function averageGrade(gradesArr) {
 function highestGrade(gradesArr) {
     let highestGrade = -1;
 
-    for (let i = 0; i < grades.length; i++) {
-        highestGrade = Math.max(highestGrade, grades[i]);
+    for (let i = 0; i < gradesArr.length; i++) {
+        highestGrade = Math.max(highestGrade, gradesArr[i]);
     }
 
     return highestGrade;
