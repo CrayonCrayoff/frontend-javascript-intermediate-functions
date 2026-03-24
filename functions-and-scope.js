@@ -64,14 +64,14 @@ function cumLaude(gradesArr) {
 
 // ---- Verwachte uitkomst: 6.642857142857143
 
-let total = 0;
-
-for (let i = 0; i < grades.length; i++) {
-    total += grades[i];
-}
-
-const average = total / grades.length;
-console.log(average);
+// let total = 0;
+//
+// for (let i = 0; i < grades.length; i++) {
+//     total += grades[i];
+// }
+//
+// const average = total / grades.length;
+// console.log(average);
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
@@ -83,6 +83,17 @@ console.log(average);
 // averageGrade([6, 4, 5]) geeft 5
 // averageGrade([8, 9, 4, 6, 10]) geeft 7.4
 
+function averageGrade(gradesArr) {
+    let total = 0;
+
+    for (let i = 0; i < grades.length; i++) {
+        total += grades[i];
+    }
+
+    return total / grades.length;
+}
+
+console.log(averageGrade(grades));
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
